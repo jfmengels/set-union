@@ -1,7 +1,7 @@
 {
   "name": "set-union",
   "version": "0.0.0",
-  "description": "Creates a new Set from the union of two Sets",
+  "description": "Creates a new Set from the union of two Sets or arrays",
   "license": "MIT",
   "repository": "jfmengels/set-union",
   "author": {

@@ -1,10 +1,11 @@
 'use strict';
-module.exports = (input, opts) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
+
+module.exports = (set1, set2) => {
+	const res = new Set(set1);
+
+	for (const value of set2) {
+		res.add(value);
 	}
 
-	opts = opts || {};
-
-	return input + ' & ' + (opts.postfix || 'rainbows');
+	return res;
 };
